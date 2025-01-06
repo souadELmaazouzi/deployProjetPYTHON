@@ -73,18 +73,7 @@ deployProjetPYTHON/
 
 ---
 
-## 🕰 Screenshots
 
-### Homepage
-![Homepage Screenshot](https://via.placeholder.com/800x400.png?text=Homepage)
-
-### Upload Dataset
-![Upload Screenshot](https://via.placeholder.com/800x400.png?text=Upload+Dataset)
-
-### Results Visualization
-![Results Screenshot](https://via.placeholder.com/800x400.png?text=Anomaly+Detection+Results)
-
----
 
 ## 🔍 Technologies Used
 
