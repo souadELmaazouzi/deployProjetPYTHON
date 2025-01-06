@@ -16,12 +16,18 @@ def perform_eda(data):
     # Passer la figure à st.pyplot()
     st.pyplot(fig)
     
+    # Fermer la figure après l'affichage
+    plt.close(fig)
+    
     st.subheader("Distribution of Features")
     for column in data.columns:
         st.write(f"Distribution of {column}")
         fig, ax = plt.subplots()
         sns.histplot(data[column], kde=True, ax=ax)
         st.pyplot(fig)
+        
+        # Fermer la figure après l'affichage
+        plt.close(fig)
 
     # Ajouter un graphique de séries temporelles (si la colonne 'Time' est présente)
     if 'Time' in data.columns:
@@ -29,3 +35,6 @@ def perform_eda(data):
         fig, ax = plt.subplots(figsize=(10, 6))
         sns.lineplot(data=data, x='Time', y='Amount', ax=ax)
         st.pyplot(fig)
+        
+        # Fermer la figure après l'affichage
+        plt.close(fig)
